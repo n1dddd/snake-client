@@ -28,8 +28,8 @@ const handleUserInput = (key) => {
   if (key === MOVE_RIGHT_KEY) {
     connection.write("Move: right");
   }
-  if (messages[key]) {
-    connection.write(`Say: ${messages[key]}`);
+  if (messages[key]) { //if the key pressed matches the key within the messages object, return a boolean true
+    connection.write(`Say: ${messages[key]}`); //if boolean true, client sends server message to display from messages object[key] property
   }
 };
 
