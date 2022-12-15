@@ -7,24 +7,15 @@ const connect = function() {
   });
   conn.on("connect", () => {
     console.log("Successfully connected to game server");
-    conn.write("Name: DS");
-    // Set timeout code, sending raw conn.write in succession did not work
-    // setTimeout(() => { //Using timeOut enables movement
-    //   conn.write("Move: up");
-    // },50)
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // },100)
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // },150)
-    setInterval(() => {
-      conn.write("Move: up");
-    },300);
+    conn.write("Name: DS"); 
   });
   // interpret incoming data as text
 
   conn.setEncoding("utf8");
+
+  conn.on("data", (data) => {
+    console.log(data)
+  })
   return conn;
 };
 
