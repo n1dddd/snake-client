@@ -1,26 +1,8 @@
-const {connect} = require('../snake-client/client')
-console.log("Connecting ...");
-connect();
+const {connect} = require('../snake-client/client') //imports connection functionality, initializes connection to server local host address, and then matching server port
+const {setupInput} = require('./input') //imports user input functionality
+console.log("Connecting ..."); //log that the file is being read, and is technically moving to the connection stage
+connect(); //call on the connect function
 
-process.stdout.write('\x07');
+process.stdout.write('\x07'); //user system sound to let user know connected to server
 
-const setupInput = function () {
-  const stdin = process.stdin;
-  stdin.setRawMode(true);
-  stdin.setEncoding("utf8");
-  stdin.resume();
-  stdin.on("data", key => {
-    handleUserInput(key)
-  });
-  return stdin;
-};
-
-const handleUserInput = (key) => {
-  const stdout = process.stdout;
-  if (key === '\u0003') {
-    stdout.write("Goodbye now!\n");
-    process.exit()
-  }
-}
-
-setupInput();
+setupInput(); //call on user input function
