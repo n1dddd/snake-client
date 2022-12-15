@@ -31,9 +31,6 @@ const handleUserInput = (key) => {
   if (messages[key]) {
     connection.write(`Say: ${messages[key]}`);
   }
-  if (key === 't') {
-    connection.write("Say: secret message unlocked");
-  }
 };
 
 module.exports = { //export the function as an object to be used in other files
