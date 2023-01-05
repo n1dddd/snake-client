@@ -4,7 +4,7 @@ The classic game of snake where a player controls a long, thin creature, which r
 
 ## Purpose
 
-**This project was made by [Daniel Seniv](https://github.com/n1dddd) and was completed as part of the [Lighthouse Labs](https://github.com/lighthouse-labs) curriculum.
+**This project was made by [Daniel Seniv](https://github.com/n1dddd) and was completed as part of the [Lighthouse Labs](https://github.com/lighthouse-labs) curriculum.**
 
 
 ## Acknowledgements
