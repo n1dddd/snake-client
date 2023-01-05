@@ -15,7 +15,7 @@ This project was not built from scratch. The server sided code was refashioned f
 
 ## Final Product
 
-!(https://i.imgur.com/Tw8JlN1.png)
+![snake](https://i.imgur.com/Tw8JlN1.png)
 
 ## Instructions
 
