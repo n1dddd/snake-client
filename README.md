@@ -2,6 +2,8 @@
 
 The classic game of snake where a player controls a long, thin creature, which roams around on a bordered plane, picking up food (or some other item), trying to avoid hitting its own tail or the edges of the playing area. Each time the snake eats a piece of food, its tail grows longer, making the game increasingly difficult.
 
+This is a client sided download, ensure that you have the server side running in parallel.
+
 ## Purpose
 
 **This project was made by [Daniel Seniv](https://github.com/n1dddd) and was completed as part of the [Lighthouse Labs](https://github.com/lighthouse-labs) curriculum.**
@@ -13,7 +15,7 @@ This project was not built from scratch. The server sided code was refashioned f
 
 ## Final Product
 
-![image](https://ibb.co/s94Qm8k)
+!(https://i.imgur.com/Tw8JlN1.png)
 
 ## Instructions
 
